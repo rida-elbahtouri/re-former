@@ -1,4 +1,4 @@
-# Micro Reddit
+# ReFormer
 
 This project is about creating a model view controller for users and submit them to database using forms
 
