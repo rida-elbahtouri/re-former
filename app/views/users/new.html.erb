@@ -1,3 +1,32 @@
+ <!-- 
+ <form action="/users" method="post">
+ <form action="/users" method="post">
+ <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+ <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label for="username">Username:</label>
+  <label for="username">Username:</label>
+@@ -7,4 +8,25 @@
+  <label for="password">Password:</label>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="user[password]"><br><br>
+  <input type="password" id="password" name="user[password]"><br><br>
+  <input type="submit" value="sign up">
+  <input type="submit" value="sign up">
+</form> 
+</form>
+--> 
+
+<!--
+<%= form_tag('/users', method: "post") do %>
+  <%= label_tag(:username, "Username:") %>
+  <%= text_field_tag(:username) %><br>
+  <%= label_tag(:email, "Email:") %>
+  <%= text_field_tag(:email) %><br>
+  <%= label_tag(:password, "Password:") %>
+  <%= password_field_tag(:password) %><br>
+  <%= submit_tag("Sign Up") %>
+<% end %>
+-->
 
 <% if @user.errors.any?  %>
     <h3 style="color:red">>we couldn't submit your form for these reasons</h3>
